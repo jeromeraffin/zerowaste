@@ -53,7 +53,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "lint": "tslint -c tslint.json src/**/*.{ts,tsx} --fix --format verbose",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -c .storybook -o public/storybook/",
+    "deploy": "yarn build && yarn build-storybook"
   },
   "repository": {
     "type": "git",
